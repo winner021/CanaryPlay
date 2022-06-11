@@ -15,7 +15,7 @@ const Login=()=>{
     const CLIENT_ID="e48a715ed42a474db5a26a2697d7ebce"
     const AUTH_ENDPOINT="https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE="token"
-    const REDIRECT_URI="https://thecanarysongs.netlify.app/home"
+    const REDIRECT_URI="https://thecanarysongs.netlify.app"
 
     
     return (
