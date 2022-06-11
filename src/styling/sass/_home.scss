@@ -1,0 +1,107 @@
+@import"./general";
+
+$primary-800:#0077b6;
+$primary-700:#dc2f02;
+$primary-600:#dc2f02;
+$grey-800:#6c757d;
+$grey-700:#adb5bd;
+$grey-600:#ced4da;
+$grey-600:#dee2e6;
+$grey-600:#e9ecef;
+$black600:rgba(13, 13, 13, 0.833);
+$white:#e9ecef;
+$blackGradient_800:rgb(14, 14, 14);
+$blackGradient_700:rgb(39, 38, 38);
+
+
+ .Home{
+ 
+    .Home_container{
+        .rightContainer{
+            
+            background-image: linear-gradient(45deg,rgb(4, 4, 4),rgb(41, 41, 41));
+            position: relative;
+            width: auto;
+            .userName{
+                z-index: 30;
+                text-align: right;
+                margin-right: 1rem;
+                color:$grey-600 ;
+                font-size: 2rem;
+                text-transform: uppercase;
+                position: absolute;
+                right: 6px;
+                top: 2rem;
+                background-color: black;
+                padding: 1.2rem 2.2rem;
+                border-radius: 5rem;
+                position: fixed;
+               i{
+                   margin-right: 1rem;
+               }
+              }
+        }
+  
+      
+        
+     }
+     .Song_Player{
+            display: flex;
+            justify-content: center;
+            
+            background-color: rgba(23, 23, 23, 0.948);
+            position: sticky;
+            bottom: 0;
+            padding: 2rem 2rem;
+            z-index: 10;
+            audio{
+                width: 50%;
+        
+            }
+    }
+
+ }
+  
+   
+ @media(max-width:28.35rem){
+
+
+
+    
+ .Home{
+   
+    .Home_container{
+        .rightContainer{
+            padding-top: 10rem;
+            background-image: linear-gradient(45deg,rgb(4, 4, 4),rgb(41, 41, 41));
+            position: relative;
+            
+            .userName{
+                padding-top: 30rem;
+                z-index: 30;
+                text-align: right;
+                margin-right: 1rem;
+                color:$grey-600 ;
+                font-size: 2rem;
+                text-transform: uppercase;
+                position: absolute;
+                right: 6px;
+                top: 2rem;
+                background-color: black;
+                padding: 1.2rem 2.2rem;
+                border-radius: 5rem;
+                position: fixed;
+               i{
+                   margin-right: 1rem;
+               }
+              }
+        }
+  
+      
+        
+     }
+    
+
+ }
+     
+ }

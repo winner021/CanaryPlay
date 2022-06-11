@@ -1,0 +1,139 @@
+
+
+.Hero{
+    margin-left: 22rem;
+    padding-top: 4rem;
+    padding-left: 3rem;
+    
+    .hero_container{
+    background-image: url("../../asset/images/hero5.jpg");
+    background-size:cover;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem;
+    max-width: 80vw;
+    border-radius: 2rem;
+    margin-bottom: -7rem;
+    h2{
+      font-size: 7rem;
+      margin-top: 4rem;
+      color: rgb(230, 221, 221);
+    }
+
+
+
+    }
+}
+
+
+
+
+///*******************************///
+    /*media queries*/
+/***********************************/
+
+
+
+@media(max-width:28em){
+ 
+  .Hero{
+    
+    
+    .hero_container{
+      max-width: 70vw;
+      margin-right: 4rem;
+    h2{
+      padding: 2rem;
+      font-size: 6rem;
+    }
+
+
+
+    }
+}
+  
+}
+
+@media(max-width:65em){
+ 
+  .Hero{
+    
+    
+    .hero_container{
+  
+    h2{
+      padding: 2rem;
+      font-size: 6rem;
+    }
+
+
+
+    }
+}
+  
+}
+
+
+
+@media(max-width:36em){
+ 
+  .Hero{
+    
+    
+    .hero_container{
+
+  
+    h2{
+      padding: 2rem;
+      font-size: 6rem;
+      margin-top: -1.5rem;
+    }
+
+
+
+    }
+}
+  
+}
+
+@media(max-width:66em){
+ 
+  .Hero{
+    
+    
+    .hero_container{
+      max-width: 75vw;
+      margin-right: 5rem;
+    h2{
+      padding: 2rem;
+      font-size: 6rem;
+    }
+
+
+
+    }
+}
+  
+}
+
+@media(max-width:28.35rem){
+
+
+  .Hero{
+    
+    margin-left: 2rem;
+    .hero_container{
+      max-width: 90vw;
+      margin-right: 5rem;
+    h2{
+      padding: 2rem;
+      font-size: 7rem;
+    }
+
+
+
+    }
+}
+
+}

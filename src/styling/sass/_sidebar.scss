@@ -1,0 +1,477 @@
+@import"./general";
+
+$primary-800:#0077b6;
+$primary-700:#dc2f02;
+$primary-600:#dc2f02;
+$grey-800:#6c757d;
+$grey-700:#adb5bd;
+$grey-600:#ced4da;
+$grey-600:#dee2e6;
+$grey-600:#e9ecef;
+$white:#e9ecef;
+$blackGradient_800:rgb(32, 32, 32);
+$blackGradient_700:rgb(39, 38, 38);
+
+
+ 
+    .leftContainer{
+       background-color: black;
+        width: 22rem;
+        position: fixed;
+        height: 100vh;
+        color:$grey-600 ;
+       
+        z-index: 100;
+
+        .logo{
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            color: white;
+           
+            text-align: center;
+           }
+           .bar{
+            .fa-bars{
+                margin-top: 3rem;
+                position: fixed;
+                right: 0;
+                margin-right: 2rem;
+                font-size: 3rem;
+            }
+            display: none;
+
+        }
+        .btn{
+           display: block;
+            .btn_container{
+                display: flex;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                padding: 1.2rem 0;
+                .icon{
+                    margin-right: 4rem;
+                    font-size: 1.2rem;
+                    color: $grey-800;
+                    margin-left: 1rem;
+                }
+                
+                .text{
+                    a{   color:grey ;
+                        &:link,&:visited{
+                         font-size: 1.5rem;
+                         text-transform: uppercase;
+                         letter-spacing: 0.5rem;
+                         background-color: transparent;
+                         border: none;
+                         text-decoration: none;
+                        }
+                     
+                     
+                     &:hover,&:active{
+                        cursor: pointer;
+                        color: white;
+                        
+                     }
+                 }
+                 button{
+                     background-color: transparent;
+                     color: $white;
+                     border: none;
+                     font-weight: 500;
+                     text-transform: uppercase;
+                     letter-spacing: 2px;
+                     &:hover{
+                         cursor: pointer;
+                     } 
+                 }
+                 
+     
+                 .container{
+                           
+                     .modal{
+                  
+                        
+                         background-color:rgba(0, 0, 0, 0.755);
+                         height: 100vh;
+                         width: 100vw;
+                         position: fixed;
+                         top: 50%;
+                         left: 50%;
+                         transform: translate(-50%,-50%);
+                       
+                         z-index:10;
+                         .modal_container{
+                               background-color: rgb(18, 18, 18);
+                               max-width: 40vw;
+                               height: 29vh;
+                               margin-left: 40rem;
+                               margin-top: 20rem;
+                               color: $white;
+                               justify-content: center;
+                              
+                               
+                               h1{
+                                   text-align: center;
+                                   text-transform: uppercase;
+                                   letter-spacing: 4px;
+                               }
+                               form{
+                                   flex-direction: column;
+                                   display: flex;
+                                   justify-content: center;
+                                   align-items: center;
+                                   input{
+                                       width: 20rem;
+                                       margin-top: 5rem;
+                                       margin-bottom: 2rem;
+                                       
+                                   }
+                                   button{
+                                       border: 2px solid $white;
+                                       padding: 1.2rem 2.4rem;
+                                   }
+                               }
+                               .cancel{
+                                 color: red;
+                                 padding: 1rem;
+                                 font-size: 2rem;
+                                 &:hover{
+                                     cursor: pointer;
+                                 }
+                             }
+                         }
+                         
+                      
+                     
+                     }
+                     .hide{
+                         display: none;
+                     }
+                 } 
+                
+                   
+                }
+                &:hover,&:active{
+                    background-color: #393939;
+                   
+                }
+                .playlist_btn{
+                    button{
+                          color:grey ;
+                    }
+               
+             }
+             
+            }
+           display: block;
+        }
+           
+       .line{
+        border-bottom: 0.25px solid $grey-600;
+        width: 20rem;
+        margin-bottom:4rem;
+        margin-top: 4rem;
+        }
+        .show{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+       .playlist{
+           
+           h3{
+               text-transform: uppercase;
+               color: white;
+               letter-spacing: 2px;
+           }
+           margin-left: 2rem;
+       }
+    }
+
+///*******************************///
+    /*media queries*/
+/***********************************/
+
+@media(max-width:72em){
+
+
+    .leftContainer{
+        
+      .btn{
+          display: block;
+        .btn_container{
+            .text{
+             
+             
+ 
+             .container{
+                       
+                 .modal{
+              
+                    
+                   
+                     .modal_container{
+                          
+                          
+                           margin-left: 50%;
+                           transform: translate(-50%,0);
+                         
+                         
+                     }
+                     
+                  
+                 
+                 }
+                
+             } 
+            
+               
+            }
+       
+
+         margin-bottom: 2rem;
+            
+            .playlist_btn{
+            
+                button{
+                
+                    text-align: left;
+                    
+                   }
+           
+         }
+
+        
+       
+    } 
+
+      }
+         
+          
+        
+       
+     }
+   
+     
+}
+
+@media(max-width:40em){
+    
+    .leftContainer{
+      
+         .btn{
+            display: block;
+
+            .btn_container{
+            
+       
+                margin-bottom: 2rem;
+                   
+                   .playlist_btn{
+                   
+                       button{
+                       
+                             font-size: 1rem;
+                             margin-left: 0.3rem;
+                             text-align: left;
+                          }
+                  
+                }
+       
+               
+              
+           } 
+         }
+       
+    
+   
+ }
+}
+
+@media(max-width:28.35rem){
+
+
+
+    .leftContainer{
+        background-color: transparent;
+         width: 100vh;
+         top: 0;
+         
+         color:$grey-600 ;
+        
+         z-index: 100;
+ 
+         .logo{
+           text-align: left;
+           margin-top: 2rem;
+           margin-left: 2rem;
+           ;
+           
+          }
+            .btn_flex{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                .bar{
+                    .fa-bars{
+                        margin-top: 3rem;
+                        position: fixed;
+                        right: 0;
+                        margin-right: 2rem;
+                        font-size: 3rem;
+                    }
+                  display: block;
+                }
+                
+                
+                .btn{
+                 position: sticky;
+                 right: 0;
+                 margin-top: 10rem;
+                 background-color: black;
+               
+                    .btn_container{
+                       
+                        margin-left: 50%;
+                        transform: translate(-50%,-50%);
+                        margin-top: 0rem;
+                        padding: 4rem;
+                       display: flex;
+                       flex-direction: column;
+                       margin-right: 15rem;
+                       
+                        .icon{
+                           display: none;
+                        }
+                        
+                        .text{
+                            
+                            a{   margin-right: 2rem;
+                            
+                         }
+                         button{
+                             background-color: transparent;
+                             color: $white;
+                             border: none;
+                             font-weight: 500;
+                             text-transform: uppercase;
+                             letter-spacing: 2px;
+                             &:hover{
+                                 cursor: pointer;
+                             } 
+                         }
+                         
+             
+                         .container{
+                                   
+                             .modal{   
+                               
+                                 z-index:10;
+                                 .modal_container{
+                                       max-width: 70vw;
+                                       position: fixed;
+                                       margin-top: 50rem;
+                                       margin-left: 30rem;
+                                      
+                                       
+                                       h1{
+                                           text-align: center;
+                                           text-transform: uppercase;
+                                           letter-spacing: 4px;
+                                       }
+                                       form{
+                                           flex-direction: column;
+                                           display: flex;
+                                           justify-content: center;
+                                           align-items: center;
+                                           input{
+                                               width: 20rem;
+                                               margin-top: 5rem;
+                                               margin-bottom: 2rem;
+                                               
+                                           }
+                                           button{
+                                               
+                                               padding: 0.5rem 1rem;
+                                           }
+                                       }
+                                       .cancel{
+                                         color: red;
+                                         padding: 1rem;
+                                         font-size: 2rem;
+                                         &:hover{
+                                             cursor: pointer;
+                                         }
+                                     }
+                                 }
+                                 
+                              
+                             
+                             }
+                             .hide{
+                                 display: none;
+                             }
+                         } 
+                        
+                           
+                        }
+                        &:hover,&:active{
+                            background-color: #393939;
+                           
+                        }
+                        .playlist_btn{
+                            button{
+                                  color:grey ;
+                            }
+                       
+                     }
+                    }
+                    .take{
+                        display: none;
+                    }
+                  
+                  
+                }
+                
+               
+            }
+        .line{
+         border-bottom: 0.25px solid $grey-600;
+         width: 20rem;
+         margin-bottom:4rem;
+         margin-top: 4rem;
+         display: inline;
+         }
+         .show{
+             display: block;
+         }
+         .hide{
+             display: none;
+         }
+        .playlist{
+             background-color: black;
+             display: inline-block;
+             width: 100vw;
+             margin-left: 0rem;
+             padding: 2rem;
+             margin-top: -5rem;
+             
+            h3{
+                text-transform: uppercase;
+                color: white;
+                letter-spacing: 2px;
+            }
+            margin-left: 0rem;
+            
+        }
+     }
+
+}
+
+

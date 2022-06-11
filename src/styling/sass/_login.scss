@@ -1,0 +1,244 @@
+@import"./general";
+$primary-800:#023e8a;
+$primary-700:#00b4d8;
+$primary-600:#48cae4;
+$grey-800:#6c757d;
+$grey-700:#adb5bd;
+$grey-600:#ced4da;
+$grey-600:#dee2e6;
+$grey-600:#e9ecef;
+$white:#e9ecef;
+
+
+.Login{
+  background-image: url("../../asset/images/landing.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position:center;
+  .Login_container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 40%;
+     transform: translate(0,-50%);
+ 
+ .Brand_name{
+     font-size: 8rem;
+     text-transform: uppercase;
+     letter-spacing: 4rem;
+     color:rgb(70, 71, 94);
+     margin-top: -3rem;
+ }
+ .Login_featured{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color:white;
+        text-align: center;
+        margin-bottom: 4rem;
+        letter-spacing: 0.4rem;
+     }
+ .Login_about{
+     font-size: 2rem;
+     margin-top: 4rem;
+     padding-bottom: 10rem;
+     text-transform: uppercase;
+     letter-spacing: 4rem;
+     color: white;
+ }
+ .login_btn{
+     font-size: 2rem;
+     text-transform: uppercase;
+     color:blueviolet ;
+     border: 2px solid white;
+     a{
+        color:rgb(225, 12, 203)  ;
+        
+        width: auto;
+         &:link{
+             text-decoration: none;
+             border:6px ;
+             background-color: rgb(70, 71, 94);
+             padding: 1.4rem 4.8rem;
+             
+             
+         }
+     }
+ }
+}
+ 
+  
+}
+
+
+
+@media(max-width:49.25rem){
+
+
+    
+.Login{
+   
+    .Login_container{
+     
+       padding-top: 40%;
+   
+   .Brand_name{
+      
+       margin-top:8rem ;
+       letter-spacing: 2rem;
+      
+     
+   }
+  
+   .Login_about{
+     
+       margin-top: 4rem;
+   
+       letter-spacing: 3rem;
+      
+   }
+  
+  }
+   
+    
+  }
+
+
+
+
+
+}
+
+@media(max-width:39.87rem){
+
+
+
+    .Login{
+     
+        .Login_container{
+      
+ 
+         
+       .Brand_name{
+         margin-top: 20rem;
+       }
+    
+       .Login_about{
+          
+           letter-spacing: 2rem;
+        
+       }
+      }
+       
+        
+      }
+
+}
+
+
+@media(max-width:24.31rem){
+
+
+
+    .Login{
+        background-image: url("../../asset/images/landing.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position:center;
+        .Login_container{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding-top: 40%;
+           transform: translate(0,-50%);
+       
+       .Brand_name{
+           font-size: 8rem;
+           text-transform: uppercase;
+           letter-spacing: 4rem;
+           color:rgb(70, 71, 94);
+           margin-top: -3rem;
+       }
+       .Login_featured{
+              font-size: 1rem;
+              text-transform: uppercase;
+              color:white;
+              text-align: center;
+              margin-bottom: 4rem;
+              letter-spacing: 0.4rem;
+           }
+       .Login_about{
+           font-size: 2rem;
+           margin-top: 4rem;
+           padding-bottom: 10rem;
+           text-transform: uppercase;
+           letter-spacing: 4rem;
+           color: white;
+       }
+       .login_btn{
+           font-size: 2rem;
+           text-transform: uppercase;
+           color:blueviolet ;
+           border: 2px solid white;
+           a{
+              color:rgb(225, 12, 203)  ;
+              
+              width: auto;
+               &:link{
+                   text-decoration: none;
+                   border:6px ;
+                   background-color: rgb(70, 71, 94);
+                   padding: 1.4rem 4.8rem;
+                   
+                   
+               }
+           }
+       }
+      }
+       
+        
+      }
+      
+      
+      
+      @media(max-width:49.25rem){
+      
+      
+          
+      .Login{
+         
+          .Login_container{
+           
+             padding-top: 40%;
+         
+         .Brand_name{
+            
+             padding-top: 60rem ;
+             letter-spacing: 2rem;
+            
+           
+         }
+        
+         .Login_about{
+           
+             margin-top: 4rem;
+         
+             letter-spacing: 1.5rem;
+            
+         }
+        
+        }
+         
+          
+        }
+      
+      
+      
+      
+      
+      }
+
+
+
+}

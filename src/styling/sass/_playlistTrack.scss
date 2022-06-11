@@ -1,0 +1,176 @@
+.playListTrack{
+    background-image: url("../../asset/images/playlisttrack.jpg");
+    background-position: center;
+
+    .name{
+        margin-left: 22rem;
+        font-size: 8rem;
+        padding: 4rem;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 4px;
+        background-image: linear-gradient(rgb(255, 111, 0),rgb(0, 0, 0));
+    }
+
+    .playlist_track_container{
+        margin-left: 21.5rem;
+        
+      
+        .banner{ 
+        margin-left: 8rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        color: aliceblue;
+       
+        .content{
+            background-color: rgb(40, 40, 40);
+            display:flex;
+            flex-direction: column;
+           
+            align-items: center;
+            max-width: 25rem;
+            overflow: hidden;
+            border-radius: 2rem;
+            margin-right: 4rem;
+            margin-bottom: 4rem;
+            .img{
+                img{
+                    height: 18rem;
+                    border-radius: 2rem;
+                }  padding: 2rem;
+                
+             }
+            .trackName{
+                font-size: 2rem;
+                color: white;
+                text-transform: upper;
+                line-height: 4rem;
+                padding: 2rem;
+                padding-top: 0rem;
+                text-align: center;
+
+            }
+
+            .buttons{
+             
+                margin-top: -12px;
+                margin-bottom: 12px;
+                
+                .btn_container{
+                  .play,.delete{
+                        text-transform: uppercase;
+                        color: white;
+                        background-color: black;
+                        padding: 1.2rem 2.4rem;   
+                        border: none;
+                         
+                  }  
+                }
+            }
+        }
+      
+        }
+    }
+}
+
+
+
+@media(max-width:28.35rem){
+    .playListTrack{
+      
+        .name{
+            margin-left: 0rem;
+            margin-top: 10rem;
+            font-size: 6rem;
+            background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 111, 0),black);
+        }
+    
+        .playlist_track_container{
+            margin-left: 1rem;
+            
+          
+            .banner{ 
+          
+           
+            .content{
+               
+                max-width: 20rem;
+               
+                .img{
+                    img{
+                        height: 14rem;
+                  }  
+                    
+                 }
+                .buttons{
+                
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    .btn_container{
+                      .play,.delete{
+                          
+                            padding: 0.5rem 1rem;     
+                      }  
+                    }
+                }
+            }
+          
+            }
+        }
+    }
+    
+
+}
+
+
+@media(max-width:21.35rem){
+    .playListTrack{
+      
+        .name{
+            margin-left: 0rem;
+            margin-top: 10rem;
+            font-size: 6rem;
+            background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 111, 0),black);
+        }
+    
+        .playlist_track_container{
+            margin-left: 1rem;
+            
+          
+            .banner{ 
+          
+           
+            .content{
+               
+                max-width: 20rem;
+               
+                .img{
+                    img{
+                        height: 14rem;
+                  }  
+                    
+                 }
+                .buttons{
+                
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    .btn_container{
+                      .play,.delete{
+                          
+                            padding: 0.2rem 0.4rem;  
+                            padding: 0.5rem;   
+                      }  
+                    }
+                }
+            }
+          
+            }
+        }
+    }
+    
+}
+
+
+

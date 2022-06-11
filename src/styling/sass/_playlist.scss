@@ -1,0 +1,22 @@
+@import"./general";
+
+.Playlist{
+ .list_container{
+     margin-top: 3rem;
+    .listItem{
+        font-size: 1.4rem;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.8rem;
+        color: grey;
+        padding: 0.2rem;
+     &:hover{
+         color: $white;
+         cursor: pointer;
+         background-color: rgba(28, 28, 28, 0.61);
+     }
+
+    }
+ }
+}

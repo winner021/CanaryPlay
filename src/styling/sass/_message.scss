@@ -1,0 +1,28 @@
+
+
+.message{
+    .message_cont{
+        background-color: black;
+        color: white;
+        height: 8vh;
+        width: 30vw;
+        margin-left: 50%;
+        position: fixed;
+        transform: translate(-50%);
+        top:1rem;
+        z-index: 100;
+        p{
+            text-align: center;
+            margin-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+    
+        }
+    
+    }
+    .hide{
+        display: none;
+    }
+    
+}
+

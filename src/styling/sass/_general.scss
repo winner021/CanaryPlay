@@ -1,0 +1,64 @@
+$primary-800:#0077b6;
+$primary-700:#dc2f02;
+$primary-600:#dc2f02;
+$grey-800:#6c757d;
+$grey-700:#adb5bd;
+$grey-600:#ced4da;
+$grey-600:#dee2e6;
+$grey-600:#e9ecef;
+$white:#e9ecef;
+
+
+html{
+    font-size: 65%;
+    font-family: 'Archivo', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid_2col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid_3col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.grid_4col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+///*******************************///
+    /*media queries*/
+/***********************************/
+
+@media(max-width:72em){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+@media(max-width:40em){
+    html{
+        font-size: 45%;
+    }
+    
+}
+@media(max-width:31em){
+    html{
+        font-size: 40%;
+    }
+    
+}
+@media(max-width:28em){
+    html{
+        font-size: 37%;
+    }
+    
+}

@@ -1,0 +1,147 @@
+@import"./general";
+$primary-800:#0077b6;
+$primary-700:#dc2f02;
+$primary-600:#dc2f02;
+$grey-800:#6c757d;
+$grey-700:#adb5bd;
+$grey-600:#ced4da;
+$grey-600:#dee2e6;
+$grey-600:#e9ecef;
+$white:#e9ecef;
+
+.Liked_Songs{
+    background-image: url("../../asset/images/liked.jpg");
+     background-size: cover;
+   
+    .songs_container{
+        margin-left: 22rem;
+        .top{
+            
+              height: 40vh;
+              color: $white;
+              font-size: 8rem;
+              padding: 5rem;
+              text-transform: uppercase;
+              letter-spacing: 4px;
+              margin-bottom: 9rem;
+        }
+        .body{
+            margin-top: -5rem;
+            display: flex;
+            flex-wrap: wrap;
+            .song_container{
+                display: inline-block;
+                margin-left: 5rem;
+               justify-content: space-between;
+                margin-bottom: 4rem;
+                background-color: rgba(13, 13, 13, 0.916);
+                max-width: 24rem;
+                overflow: hidden;
+                border-radius: 2rem;
+                .img{
+                    padding: 2rem;
+                    img{
+                        height: 20rem;
+                        border-radius: 2rem;
+                    }
+                }
+                .name{
+                    color: $white;
+                    font-size: 1.7rem;
+                    text-align: center;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    max-width: 22rem;
+
+                }
+                .btn{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    button{
+                        color: $white;
+                        background-color: transparent;
+                        font-size: 1.5rem;
+                        padding: 1rem 2rem;
+                        margin-bottom: 2rem;
+                        border: 2px solid red;
+                        margin-right: 2rem;
+                        &:hover{
+                            color: red;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:28.35rem){
+    .Liked_Songs{
+        background-image: url("../../asset/images/liked.jpg");
+        background-size: cover;
+       
+        .songs_container{
+            margin-left: 3rem;
+            margin-top: 10rem;
+            .top{
+                
+                  height: auto;
+                  font-size: 6rem;
+                  padding: 2rem;
+               
+                  letter-spacing: 4px;
+            }
+            .body{
+                margin-top: 2rem;
+               
+                .song_container{
+                    display: inline-block;
+                    margin-left: 5rem;
+                   justify-content: space-between;
+                    margin-bottom: 4rem;
+                    background-color: rgba(13, 13, 13, 0.916);
+                    max-width: 24rem;
+                    overflow: hidden;
+                    border-radius: 2rem;
+                    .img{
+                        padding: 3rem;
+                        img{
+                            height: 15rem;
+                            border-radius: 2rem;
+                            
+                        }
+                    }
+                    .name{
+                        color: $white;
+                        font-size: 1.7rem;
+                        text-align: center;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        max-width: 22rem;
+    
+                    }
+                    .btn{
+                       
+                        margin-left: 2rem;
+                        button{
+                         
+                            padding: 0.5rem 1rem;
+                            margin-bottom: 0.5rem;
+             
+                            
+                            &:hover{
+                                color: red;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
