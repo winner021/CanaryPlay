@@ -11,6 +11,8 @@ const AboutUser=(props)=>{
      }
   
  },[props.token])
+
+ console.log("i am rendering")
     return(
         <span>
            {props.username.data!= null? props.username.data.display_name:""}

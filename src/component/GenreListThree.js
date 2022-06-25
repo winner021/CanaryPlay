@@ -62,6 +62,7 @@ const GenreListThree=(props)=>{
  
                 
                 
+       console.log("i am rendering")
 
       
      

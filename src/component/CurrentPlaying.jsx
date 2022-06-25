@@ -86,7 +86,8 @@ const CurrentPlaying=(props)=>{
        
     }
 
-   
+    console.log("i am rendering")
+
 
     const playlistAddHandler=()=>{
         
@@ -109,7 +110,7 @@ const CurrentPlaying=(props)=>{
     }
 
 
-
+    console.log("i am rendering")
     return(
         <>
          

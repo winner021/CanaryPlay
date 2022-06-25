@@ -9,13 +9,13 @@ import RecentlyPlayed from './RecentlyPlayed'
 import { finalTracksOne } from '../actions'
 import { finalTracksTwo } from '../actions'
 import { finalTracksThree } from '../actions'
-import { finalTracksfour } from '../actions'
-import GenreListFive from './GenreListFive'
-import GenreListFour from './GenreListFour'
+
+
+
 import GenreListone from './GenreListone'
 import GenreListThree from './GenreListThree'
 import GenreListtwo from './genreListtwo'
-import { finalTracksFive } from '../actions'
+
 
 
 const GenreListing=(props)=>{
@@ -61,7 +61,8 @@ const GenreListing=(props)=>{
     
            } 
            
-           
+           console.log("i am rendering")
+
            const renderOne = async()=>{
 
                

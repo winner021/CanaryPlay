@@ -16,6 +16,7 @@ const Login=()=>{
     const AUTH_ENDPOINT="https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE="token"
     const REDIRECT_URI="https://canarysong.netlify.app/home"
+    console.log("i am rendering")
 
     
     return (

@@ -77,6 +77,7 @@ import { songClickAction } from '../actions'
         })
     }
 
+    console.log("i am rendering")
 
     return(<>
    <Message msg={getmessage} style={getMsgStyle}/>

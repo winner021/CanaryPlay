@@ -75,7 +75,8 @@ const dataRender=()=>{
     
 
 }
-console.log(props.state)
+
+console.log("i am rendering")
 
     return(
         <div className='Search'>

@@ -55,7 +55,8 @@ const Sidebar=(props)=>{
         }
         console.log(getBarStyle)
     }
- 
+    console.log("i am rendering")
+
     return(
         <div>
             

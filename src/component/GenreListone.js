@@ -29,6 +29,8 @@ const GenreListone=(props)=>{
  history.push("/currentPlaying")
 }
 
+console.log("i am rendering")
+
      var num=0
        const renderdataOne=()=> {
                

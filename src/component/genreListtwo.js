@@ -64,7 +64,8 @@ const GenreListtwo=(props)=>{
                 
 
       
-     
+       console.log("i am rendering")
+
        
       
   

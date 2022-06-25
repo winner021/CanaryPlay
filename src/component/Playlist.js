@@ -20,7 +20,8 @@ const Playlist=(props)=>{
        props.playlistTrackFetch(id,props.token,name)
        history.push("/playlistTracks")
     }
-    
+    console.log("i am rendering")
+
     const renderData=()=>{
         if( props.playlistData.data){
             return  props.playlistData.data.items.map((item)=>{

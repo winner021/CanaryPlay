@@ -33,6 +33,8 @@ const RecentlyPlayed=(props)=>{
 
 
 } 
+console.log("i am rendering")
+
     return(
        <div>
         <div className='category'>

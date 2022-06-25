@@ -45,6 +45,8 @@ const renderData=()=>{
 
 }
 
+console.log("i am rendering")
+
     return (
         <div className='Artist_track'>
             <Sidebar/>

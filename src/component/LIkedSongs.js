@@ -12,6 +12,8 @@ import { likedSongDeleteAction } from '../actions'
 
 const LikedSongs=(props)=>{
 
+  console.log("i am rendering")
+
   useEffect(()=>{
     if(props.likedSongs){
       datarender()

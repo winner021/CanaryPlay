@@ -3,6 +3,7 @@ import SpotifyPlayer from 'react-spotify-web-playback'
 import { connect } from 'react-redux'
 
 const SongPlayer=(props)=>{
+  console.log("i am rendering")
 
     return<SpotifyPlayer 
     styles={{

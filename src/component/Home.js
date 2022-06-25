@@ -79,6 +79,7 @@ useEffect(()=>{
    
 },[getgenere])
 
+console.log("i am rendering")
 
 
 
