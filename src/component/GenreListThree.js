@@ -79,7 +79,7 @@ const GenreListThree=(props)=>{
                         
                 </div>
          
-            <div className="category_flex">
+            <div className="category_flex" style={{color:"white"}}>
             {props.trackthree?renderdataThree():"contents are loading"}
             </div>
          </div>

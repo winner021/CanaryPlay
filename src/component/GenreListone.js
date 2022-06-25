@@ -83,7 +83,7 @@ const GenreListone=(props)=>{
     
                 </div>
          
-            <div className="category_flex">
+            <div className="category_flex" style={{color:"white"}}>
             {props.trackone?renderdataOne():"contents are loading"}
             </div>
          </div>

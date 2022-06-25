@@ -78,7 +78,7 @@ const GenreListtwo=(props)=>{
                     </div>        
                 </div>
          
-            <div className="category_flex">
+            <div className="category_flex" style={{color:"white"}}>
             {props.tracktwo?renderdataTwo():"contents are loading"}
             </div>
          </div>

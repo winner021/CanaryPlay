@@ -81,7 +81,7 @@ const GenreListFour=(props)=>{
                         
                 </div>
          
-            <div className="category_flex">
+            <div className="category_flex" style={{color:"white"}}>
             {props.trackFour?renderdataFour():"contents are loading"}
             </div>
          </div>
