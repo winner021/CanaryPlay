@@ -25,8 +25,7 @@ const GenreListing=(props)=>{
                 renderTwo()
                 renderOne()
                 renderthree()
-                renderfour()
-                renderFive()
+              
         },[props.selectedgenre])
 
         const renderTwo = async()=>{
@@ -126,70 +125,9 @@ const GenreListing=(props)=>{
                
     
            }
-           const renderfour = async()=>{
-
-                if(props.items){
-              
-                    const data=await axios.get("https://api.spotify.com/v1/recommendations",{
-                            headers:{
-                                    Authorization: `Bearer ${props.token}`  
-                                },
-                            params:{
-                                    seed_genres:props.selectedgenre[3],
-                            }
-                        })
-                
-                        const tracksArr=[];
-                        if(data.data.tracks){
-                            data.data.tracks.map((item)=>{
-                                    tracksArr.push(item.id) 
-                              
-                            })
-                           
-                        }
-                  
-                       
-                       props.finalTracksfour(tracksArr,props.token)
-                      
-                   
-                    }
-               
-               
-    
-           }
+         
           
-           const renderFive = async()=>{
-
-               
-                if(props.items){
-             
-                    const data=await axios.get("https://api.spotify.com/v1/recommendations",{
-                            headers:{
-                                    Authorization: `Bearer ${props.token}`  
-                                },
-                            params:{
-                                    seed_genres:props.selectedgenre[4],
-                            }
-                        })
-                     
-                        const tracksArr=[];
-                        if(data.data.tracks){
-                            data.data.tracks.map((item)=>{
-                                    tracksArr.push(item.id) 
-                              
-                            })
-                           
-                        }
-                      
-                       
-                       props.finalTracksFive(tracksArr,props.token)
-                      
-                   
-                    }
-               
-               
-    
-           }
+        
         
        
   return (
