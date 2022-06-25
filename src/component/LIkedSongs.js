@@ -16,12 +16,12 @@ const LikedSongs=(props)=>{
     if(props.likedSongs){
       datarender()
     }
-  },[props.state.data])
+  },[props.state.data,props.likedSongs])
     
   const history=useHistory()
     useEffect(()=>{
         props.likedDataFetch(props.tokenId)  
-    },[])
+    },[props.likedSongs])
 
     const ClickReducer=(item)=>{
       const data={
