@@ -199,7 +199,7 @@ export const likedDataPut=(id,trackId)=>{
     
 }
 export const likedDataFetch=(id)=>{
-console.log(id)
+
     return async(dispatch)=>{
       const response=await axios.get(`https://api.spotify.com/v1/me/tracks`,{
         headers:{

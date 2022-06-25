@@ -109,9 +109,7 @@ const CurrentPlaying=(props)=>{
     }
 
 
-  console.log(getmessage)
-  console.log(getMsgStyle)
-  console.log(props.state)
+
     return(
         <>
          

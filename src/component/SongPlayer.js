@@ -3,7 +3,7 @@ import SpotifyPlayer from 'react-spotify-web-playback'
 import { connect } from 'react-redux'
 
 const SongPlayer=(props)=>{
-    console.log(props.token)
+
     return<SpotifyPlayer 
     styles={{
         activeColor: '#fff',

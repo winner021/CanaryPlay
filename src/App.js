@@ -11,7 +11,7 @@ import { connect } from 'react-redux'
 
 
 const App=(props)=>{
-    console.log(props.state)
+    
     return(
         <BrowserRouter>
     <Route path="/" exact component={Login}/>

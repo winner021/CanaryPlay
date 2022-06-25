@@ -43,7 +43,7 @@ const LikedSongs=(props)=>{
    }
 
 
-   console.log(props.state)
+
     
     const datarender=()=>{
         if(props.likedSongs.data){
@@ -100,6 +100,7 @@ const mapStateToProps=(state)=>{
       tokenId:state.tokenId.data,
       likedSongs:state.userLikedSongs,
       state:state.likedSongDelete,
+      s:state
     }
  }
  
