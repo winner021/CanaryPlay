@@ -16,12 +16,12 @@ const LikedSongs=(props)=>{
     if(props.likedSongs){
       datarender()
     }
-  },[props.state.data])
+  },[props.state.data,props.delete])
     
   const history=useHistory()
     useEffect(()=>{
         props.likedDataFetch(props.tokenId)  
-    },[])
+    },[props.delete])
 
     const ClickReducer=(item)=>{
       const data={
@@ -101,7 +101,7 @@ const mapStateToProps=(state)=>{
       tokenId:state.tokenId.data,
       likedSongs:state.userLikedSongs,
       state:state.likedSongDelete,
-      s:state
+      delete:state.likedSongDelete
     }
  }
  

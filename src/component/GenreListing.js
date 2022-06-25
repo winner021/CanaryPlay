@@ -24,7 +24,7 @@ const GenreListing=(props)=>{
         useEffect(()=>{
                 renderTwo()
                 renderOne()
-                renderthree()
+                
               
         },[props.selectedgenre])
 
@@ -95,37 +95,7 @@ const GenreListing=(props)=>{
                
     
            }
-           const renderthree = async()=>{
-
-        
-                if(props.items){
           
-                    const data=await axios.get("https://api.spotify.com/v1/recommendations",{
-                            headers:{
-                                    Authorization: `Bearer ${props.token}`  
-                                },
-                            params:{
-                                    seed_genres:props.selectedgenre[2],
-                            }
-                        })
-                   
-                        const tracksArr=[];
-                        if(data.data.tracks){
-                            data.data.tracks.map((item)=>{
-                                    tracksArr.push(item.id) 
-                              
-                            })
-                           
-                        }
-                             
-                       props.finalTracksThree(tracksArr,props.token)
-                      
-                   
-                    }
-               
-               
-    
-           }
          
           
         
@@ -136,7 +106,7 @@ const GenreListing=(props)=>{
             < RecentlyPlayed/>
            <GenreListone/>
            <GenreListtwo/>
-           <GenreListThree/>
+        
            
            
         </div>

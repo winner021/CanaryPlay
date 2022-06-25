@@ -90,71 +90,9 @@ export const finalTracksThree=(data,id)=>{
     
 
 }
-export const finalTracksfour=(data,id)=>{
-    
-   
-    return async (dispatch)=>{
-      const arr=[]
-        for(let i=0;i<20;i++)
-        {
-            const response=await axios.get(`https://api.spotify.com/v1/tracks/${data[i]}`,{
-            headers:{
-                Authorization: `Bearer ${id}`  
-            }
-        })
-      
-        arr.push(response.data)
-        }
-        dispatch({type:"finalTracksfour",payload:arr})
-    }
 
-    
 
-}
-export const finalTracksFive=(data,id)=>{
-     
 
-   
-    return async (dispatch)=>{
-      const arr=[]
-        for(let i=0;i<20;i++)
-        {
-            const response=await axios.get(`https://api.spotify.com/v1/tracks/${data[i]}`,{
-            headers:{
-                Authorization: `Bearer ${id}`  
-            }
-        })
-      
-        arr.push(response.data)
-        }
-        dispatch({type:"finalTracksfive",payload:arr})
-    }
-
-    
-
-}
-export const finalTracksSix=(data,id)=>{
-     
-
-   
-    return async (dispatch)=>{
-      const arr=[]
-        for(let i=0;i<20;i++)
-        {
-            const response=await axios.get(`https://api.spotify.com/v1/tracks/${data[i]}`,{
-            headers:{
-                Authorization: `Bearer ${id}`  
-            }
-        })
-      
-        arr.push(response.data)
-        }
-        dispatch({type:"finalTrackssix",payload:arr})
-    }
-
-    
-
-}
 
 export const songClickAction=(data)=>{
      
