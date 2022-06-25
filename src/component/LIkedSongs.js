@@ -12,18 +12,16 @@ import { likedSongDeleteAction } from '../actions'
 
 const LikedSongs=(props)=>{
 
-  console.log("i am rendering")
-
   useEffect(()=>{
     if(props.likedSongs){
       datarender()
     }
-  },[props.state.data,props.likedSongs])
+  },[props.state.data])
     
   const history=useHistory()
     useEffect(()=>{
         props.likedDataFetch(props.tokenId)  
-    },[props.likedSongs])
+    },[])
 
     const ClickReducer=(item)=>{
       const data={
@@ -79,9 +77,8 @@ const LikedSongs=(props)=>{
             })
         }
       
-
+        
     }
-    console.log(props.s)
     return(
         <div className='Liked_Songs'>
           <Sidebar/>
