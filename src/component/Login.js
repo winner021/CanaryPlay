@@ -12,10 +12,10 @@ const Login=()=>{
     clearStorage()
      
    
-    const CLIENT_ID="e48a715ed42a474db5a26a2697d7ebce"
+    const CLIENT_ID="38187bcc0c6642139b824ca9c906b731"
     const AUTH_ENDPOINT="https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE="token"
-    const REDIRECT_URI="https://thecanarysongs.netlify.app/home"
+    const REDIRECT_URI="https://canarysong.netlify.app/home"
 
     
     return (
