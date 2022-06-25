@@ -77,7 +77,9 @@ const LikedSongs=(props)=>{
             })
         }
       
+
     }
+    console.log(props.s)
     return(
         <div className='Liked_Songs'>
           <Sidebar/>
