@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { userDataFetchAction } from '../actions'
 
 const AboutUser=(props)=>{
- console.log(props.state)
+
  useEffect(()=>{
      if(props.token){
         props.userDataFetchAction(props.token)

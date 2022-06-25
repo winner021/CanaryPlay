@@ -32,7 +32,7 @@ useEffect(()=>{
     
     
   
-  console.log(props.state)
+ 
 
     useEffect(()=>{
         if(props.clickedsong){
@@ -41,7 +41,7 @@ useEffect(()=>{
        
        
     },[props.clickedsong])
-console.log(props.token.data)
+
 useEffect(()=>{
     if(props.token.data){
         const data=async()=>{
@@ -69,7 +69,7 @@ useEffect(()=>{
         for(let i=0;i<7;i++){
             var num=Math.floor(Math.random() * 40)
             genrearr.push(getgenere[num])
-            console.log(getgenere[num])
+            
             
         }
         props.selectGenres(genrearr)

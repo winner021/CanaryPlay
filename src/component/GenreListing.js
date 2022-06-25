@@ -157,7 +157,7 @@ const GenreListing=(props)=>{
                
     
            }
-           console.log(props.state)
+          
            const renderFive = async()=>{
 
                
